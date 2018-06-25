@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+         <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" crossorigin="anonymous">
+
+        <title>Client </title>
+    </head>
+    <body lang="en">
+        <div class="container">
+            <h1 class="title">Client Side Demo</h1>
+            <p>Hello World!</p>
+
+            <div class="card">
+                <div class="card-header">
+                    Featured
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+            <ul id="characters"></ul>
+        </div>
+
+        <script type="text/template" id="characters-template">
+            <% _.each(characters, function (character) { %>
+                <li><%- character.name %></li>
+            <% }); %>
+        </script>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="node_modules/jquery/dist/jquery.min.js" crossorigin="anonymous"></script>
+        <script src="node_modules/popper.js/dist/popper.min.js" crossorigin="anonymous"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+        <script src="node_modules/underscore/underscore-min.js" crossorigin="anonymous"></script>
+        <script src="node_modules/backbone/backbone-min.js" crossorigin="anonymous"></script>
+
+        <!-- -->
+        <script src="models/model.character.js" crossorigin="anonymous"></script>
+        <script src="collections/collection.characters.js" crossorigin="anonymous"></script>
+        <script src="views/view.characters.js" crossorigin="anonymous"></script>
+    </body>
+</html>
